@@ -1,2 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-@import './styles';
+@import './reset';
+
+@import './fonts';
+@import './variables';
+@import './common';
+@import './header';
