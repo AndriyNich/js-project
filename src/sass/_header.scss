@@ -28,6 +28,11 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 54px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
 }
 
 .header__logo {
@@ -68,6 +73,8 @@ header .container {
   color: white;
 }
 .search-form {
+  margin: 0 auto;
+  // width: ;
 }
 .search-form__text {
 }
