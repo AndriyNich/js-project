@@ -1,0 +1,49 @@
+<header>
+  <div class="container">
+    <div class="header">
+      <div class="header__first">
+        <a href="index.html" class="header__logo">
+          <img src="./images/logo.svg" alt="logo" width="24" height="24" />
+          <div class="header__title">Filmoteka</div>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="index.html" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="library.html" class="header__link header__link--active"
+                >My library</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <form class="search-form">
+        <div class="search-form__radio-list">
+          <label class="search-form__radio-label">
+            <input
+              class="search-form__radio-select visually-hidden"
+              type="radio"
+              name="select"
+              id="watched"
+              value="watched"
+              checked
+            />
+            <span class="search-form__title">Watched</span>
+          </label>
+          <label class="search-form__radio-label">
+            <input
+              class="search-form__radio-select visually-hidden"
+              type="radio"
+              name="select"
+              id="queue"
+              value="queue"
+            />
+            <span class="search-form__title">Queue</span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
