@@ -1,0 +1,189 @@
+.film-info {
+  width: 280px;
+  margin: 0 auto;
+
+  border-radius: 16px;
+
+  @include tablet {
+    width: 704px;
+  }
+
+  @include desktop {
+    width: 806px;
+  }
+}
+
+.film-info__close {
+  padding: 8px 8px 2px 0;
+  text-align: right;
+}
+
+.film-info__close__btn {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+}
+
+.film-info__info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px 40px;
+  gap: 20px;
+
+  @include tablet {
+    flex-wrap: nowrap;
+    padding: 0 36px 40px;
+    gap: 68px;
+  }
+
+  @include desktop {
+    padding: 0 12px 40px;
+    gap: 16px;
+  }
+}
+
+.info__img {
+  width: 240px;
+  height: 357px;
+
+  @include tablet {
+    width: 264px;
+    height: 374px;
+  }
+
+  @include desktop {
+    width: 375px;
+    height: 478px;
+  }
+}
+
+.info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+
+  @include tablet {
+    width: 264px;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.info__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.17;
+  }
+}
+
+.info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.info__item {
+  display: flex;
+  gap: 10px;
+}
+
+.info__property {
+  width: 98px;
+  color: #8c8c8c;
+}
+
+.info__value {
+  width: auto;
+  color: #000000;
+}
+
+.info__rating {
+  display: inline-block;
+  width: 36px;
+  height: 16px;
+  margin-right: 5px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #ff6b01;
+  border-radius: 5px;
+}
+
+.info__cnt {
+  display: inline-block;
+  width: 36px;
+  height: 16px;
+  margin-left: 5px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.info__subtitle {
+  margin-bottom: 8px;
+}
+
+.info__note {
+  margin-bottom: 20px;
+  line-height: 1.67;
+}
+
+.info__form {
+}
+
+.info__radio-list {
+  display: flex;
+  gap: 20px;
+
+  @include tablet {
+    gap: 15px;
+  }
+
+  @include desktop {
+    padding-left: 8px;
+  }
+}
+
+.info__radio-label {
+}
+
+.info__radio-select {
+}
+
+.info__btn-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 44px;
+  padding: 0 7px;
+
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 5px;
+
+  @include tablet {
+    width: 125px;
+  }
+
+  @include desktop {
+    width: 136px;
+  }
+
+  transition-property: color, background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+  .info__radio-select:checked + & {
+    color: #ffffff;
+    background-color: #ff6b01;
+    border-color: #ff6b01;
+  }
+}
